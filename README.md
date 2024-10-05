@@ -1,42 +1,11 @@
-## Hi there 👋
+👋 Welcome to my GitHub profile! I have a deep passion for Python programming 🐍, data analysis 📊, and data science 📈, with proven experience showcased in my [portfolio](https://azzindani.github.io/) and repositories. My expertise lies in machine learning (ML) 🤖 and artificial intelligence (AI) 🧠, where I handle the entire workflow—from data collection 📥 and preprocessing 🛠️ to model building 🏗️, evaluation ✅, and testing 🧪.
 
-<!--
-**azzindani/azzindani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Feel free to explore my projects in the GitHub [repository](https://github.com/azzindani?tab=repositories)! 🔗
 
-Here are some ideas to get you started:
+Currently, I’m diving into Large Language Models (LLM) 📚, fine-tuning 🎯, retrieval-augmented generation (RAG) 🔍, and LangChain 🧩 to build intelligent systems that can interact with dynamic knowledge sources.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-
-# 💻 Tech Stack:
-## Office
-![Microsoft Word](https://img.shields.io/badge/microsoft%20word-2B579A.svg?style=for-the-badge&logo=microsoft-word&logoColor=white)
-![Microsoft Excel](https://img.shields.io/badge/microsoft%20excel-217346.svg?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Microsoft PowerPoint](https://img.shields.io/badge/microsoft%20powerpoint-B7472A.svg?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
-![Microsoft Office 365](https://img.shields.io/badge/microsoft%20office%20365-D83B01.svg?style=for-the-badge&logo=microsoft-office&logoColor=white)
-![Excel VBA](https://img.shields.io/badge/Excel%20VBA-217346.svg?style=for-the-badge&logo=microsft-excel&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power%20Automate-0072C6.svg?style=for-the-badge&logo=microsoft-power-automate&logoColor=white)
-![SAP](https://img.shields.io/badge/SAP-0FAAFF.svg?style=for-the-badge&logo=sap&logoColor=white)
-![SPSS](https://img.shields.io/badge/SPSS-3D3D3D.svg?style=for-the-badge&logo=ibm&logoColor=white)
-![QGIS](https://img.shields.io/badge/QGIS-5B8C2A.svg?style=for-the-badge&logo=qgis&logoColor=white)
-
-## Design Graphic
-![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
-![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
-![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white)
-![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
-![CorelDRAW](https://img.shields.io/badge/CorelDRAW-00B1E1.svg?style=for-the-badge&logo=coreldraw&logoColor=white)
-![Corel VideoStudio](https://img.shields.io/badge/Corel%20VideoStudio-00A3E0.svg?style=for-the-badge&logo=corelvideo&logoColor=white)
-
-## Programming
+## 💻 Tech Stack:
+### 🤖 Programming
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-F37626.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00.svg?style=for-the-badge&logo=googlecolab&logoColor=white)
@@ -66,8 +35,26 @@ Here are some ideas to get you started:
 ![Psycopg](https://img.shields.io/badge/psycopg-2F6792.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Pywinauto](https://img.shields.io/badge/pywinauto-5A9BD5.svg?style=for-the-badge&logo=python&logoColor=white)
 
+### 🎨 Design Graphic
+![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
+![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
+![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white)
+![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
+![CorelDRAW](https://img.shields.io/badge/CorelDRAW-00B1E1.svg?style=for-the-badge&logo=coreldraw&logoColor=white)
+![Corel VideoStudio](https://img.shields.io/badge/Corel%20VideoStudio-00A3E0.svg?style=for-the-badge&logo=corelvideo&logoColor=white)
 
-# 📊 GitHub Stats:
+### 📁 Office
+![Microsoft Word](https://img.shields.io/badge/microsoft%20word-2B579A.svg?style=for-the-badge&logo=microsoft-word&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/microsoft%20excel-217346.svg?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Microsoft PowerPoint](https://img.shields.io/badge/microsoft%20powerpoint-B7472A.svg?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
+![Microsoft Office 365](https://img.shields.io/badge/microsoft%20office%20365-D83B01.svg?style=for-the-badge&logo=microsoft-office&logoColor=white)
+![Excel VBA](https://img.shields.io/badge/Excel%20VBA-217346.svg?style=for-the-badge&logo=microsft-excel&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power%20Automate-0072C6.svg?style=for-the-badge&logo=microsoft-power-automate&logoColor=white)
+![SAP](https://img.shields.io/badge/SAP-0FAAFF.svg?style=for-the-badge&logo=sap&logoColor=white)
+![SPSS](https://img.shields.io/badge/SPSS-3D3D3D.svg?style=for-the-badge&logo=ibm&logoColor=white)
+![QGIS](https://img.shields.io/badge/QGIS-5B8C2A.svg?style=for-the-badge&logo=qgis&logoColor=white)
+
+## 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=azzindani&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=azzindani&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=azzindani&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
@@ -75,4 +62,16 @@ Here are some ideas to get you started:
 ---
 [![](https://visitcount.itsvg.in/api?id=azzindani&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 📫 Contact
+
+<div id="badges">
+  <a href="your.422indani@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=black" alt="Gmail Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/azzindan1/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://azzindani.github.io/">
+    <img src="https://img.shields.io/badge/Github_Profile-navy?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
+</div>
