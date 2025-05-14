@@ -65,7 +65,7 @@ Currently, I’m diving into Large Language Models (LLM) 📚, fine-tuning 🎯,
 ## 📫 Contact
 
 <div id="badges">
-  <a href="mailto:your.422indani@gmail.com">
+  <a href="mailto:422indani@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=black" alt="Gmail Badge"/>
   </a>
   <a href="https://www.linkedin.com/in/azzindan1/">
