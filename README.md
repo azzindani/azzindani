@@ -1,3 +1,5 @@
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:422indani@gmail.com)
+
 👋 Welcome to my GitHub profile! I have a deep passion for Python programming 🐍, data analysis 📊, and data science 📈, with proven experience showcased in my [portfolio](https://azzindani.github.io/) and repositories. My expertise lies in machine learning (ML) 🤖 and artificial intelligence (AI) 🧠, where I handle the entire workflow—from data collection 📥 and preprocessing 🛠️ to model building 🏗️, evaluation ✅, and testing 🧪.
 
 Feel free to explore my projects in the GitHub [repository](https://github.com/azzindani?tab=repositories)! 🔗
