@@ -2,7 +2,7 @@
 
 Feel free to explore my projects in the GitHub [repository](https://github.com/azzindani?tab=repositories)! 🔗
 
-Currently, I’m diving into Large Language Models (LLM) 📚, fine-tuning 🎯, retrieval-augmented generation (RAG) 🔍, and LangChain 🧩 to build intelligent systems that can interact with dynamic knowledge sources.
+Currently, I’m diving into end-to-end Large Language Models (LLM) 📚 fine-tuning 🎯 to build intelligent systems that can interact with dynamic knowledge sources.
 
 ## 💻 Tech Stack:
 ### 🤖 Programming
