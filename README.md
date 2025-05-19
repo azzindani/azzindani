@@ -3,6 +3,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](https://azzindani.github.io/)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/Azzindani)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/azzindani)
+---
 
 👋 Welcome to my GitHub profile! I have a deep passion for Python programming 🐍, data analysis 📊, and data science 📈, with proven experience showcased in my [portfolio](https://azzindani.github.io/) and repositories. My expertise lies in machine learning (ML) 🤖 and artificial intelligence (AI) 🧠, where I handle the entire workflow—from data collection 📥 and preprocessing 🛠️ to model building 🏗️, evaluation ✅, and testing 🧪.
 
