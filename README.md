@@ -1,9 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="azzindani — tooling for agentic AI" src="assets/banner-dark.svg">
-</picture>
-
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:422indani@gmail.com)
 [![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/azzindan1/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-121013?logo=github&logoColor=white)](https://azzindani.github.io/)
@@ -26,32 +20,18 @@ So the aim here is meaningful tools across as many of those domains as possible,
 
 Have a look around.
 
-```mermaid
-flowchart LR
-    M["🧠 Frontier & local models"] --> H["⚙️ Harness"]
-    H --> T["🔧 Tools"]
-    T --> D1["Office productivity"]
-    T --> D2["Research"]
-    T --> D3["Scientific computing"]
-    T --> D4["Data analysis"]
-    T -. every tool makes the next one faster .-> H
-```
-
 ---
 
 ### 🛠️ Working with
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+|  |  |
+|---|---|
+| **Languages** | ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white) |
+| **ML & data** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) |
+| **Infrastructure** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) ![Self%2DHosted](https://img.shields.io/badge/Self--Hosted-0B7285?style=for-the-badge) |
+| **Compute** | ![VPS](https://img.shields.io/badge/VPS-4C566A?style=for-the-badge) ![Local Workstation](https://img.shields.io/badge/Local%20Workstation-2F3640?style=for-the-badge) ![Rented GPU](https://img.shields.io/badge/Rented%20GPU-76B900?style=for-the-badge) ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white) ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white) |
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=black)
+**Hybrid by default.** Local workstation, VPS, paid GPU rental, and free tiers like Colab and Kaggle all earn their place depending on the job — and I'd rather move work between them than be locked into one. Where it's possible I prefer cloud-to-cloud pipelines: data and compute stay in the cloud and talk to each other directly, instead of routing everything through a laptop.
 
 ---
 

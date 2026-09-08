@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="azzindani — tooling for agentic AI">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="#0d1117"/>
+  <rect x="0" y="0" width="1280" height="6" fill="url(#edge)"/>
+
+  <g stroke="#1c2430" stroke-width="1" fill="none">
+    <path d="M900 210 L1010 300"/>
+    <path d="M900 400 L1010 300"/>
+    <path d="M1030 300 L1140 300"/>
+    <path d="M1160 300 L1215 232"/>
+    <path d="M1160 300 L1215 278"/>
+    <path d="M1160 300 L1215 322"/>
+    <path d="M1160 300 L1215 368"/>
+  </g>
+  <g fill="#222d3a">
+    <circle cx="892" cy="210" r="8"/>
+    <circle cx="892" cy="400" r="8"/>
+    <circle cx="1222" cy="232" r="6"/>
+    <circle cx="1222" cy="278" r="6"/>
+    <circle cx="1222" cy="322" r="6"/>
+    <circle cx="1222" cy="368" r="6"/>
+  </g>
+  <circle cx="1020" cy="300" r="12" fill="#1f6feb"/>
+  <circle cx="1150" cy="300" r="12" fill="#1f6feb"/>
+
+  <g font-family="DejaVu Sans, Verdana, Geneva, sans-serif">
+    <text x="96" y="268" fill="#e6edf3" font-size="112" font-weight="700" letter-spacing="2">azzindani</text>
+    <text x="100" y="332" fill="#58a6ff" font-size="30" font-weight="600" letter-spacing="6">TOOLING FOR AGENTIC AI</text>
+
+    <text x="100" y="410" fill="#8b949e" font-size="25">office productivity · research</text>
+    <text x="100" y="450" fill="#8b949e" font-size="25">scientific computing · data analysis</text>
+
+    <text x="100" y="556" fill="#6e7681" font-size="22" letter-spacing="1.2">github.com/azzindani</text>
+  </g>
+
+  <rect x="96" y="492" width="132" height="3" fill="#30363d"/>
+</svg>
