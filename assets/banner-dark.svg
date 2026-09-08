@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="azzindani — tooling for agentic AI">
+  <rect width="1200" height="200" fill="#0d1117"/>
+  <rect x="0" y="0" width="1200" height="2" fill="#58a6ff" opacity="0.55"/>
+
+  <g font-family="DejaVu Sans, Verdana, Geneva, sans-serif">
+    <text x="64" y="96" fill="#e6edf3" font-size="46" font-weight="700" letter-spacing="1.5">azzindani</text>
+    <text x="66" y="128" fill="#8b949e" font-size="16" letter-spacing="2.6">TOOLING FOR AGENTIC AI</text>
+    <text x="66" y="156" fill="#6e7681" font-size="13" letter-spacing="0.6">office productivity · research · scientific computing · data analysis</text>
+  </g>
+
+  <g stroke="#30363d" stroke-width="1.4" fill="none">
+    <path d="M770 74 L890 100"/>
+    <path d="M770 126 L890 100"/>
+    <path d="M910 100 L1010 100"/>
+    <path d="M1030 100 L1120 58"/>
+    <path d="M1030 100 L1120 86"/>
+    <path d="M1030 100 L1120 114"/>
+    <path d="M1030 100 L1120 142"/>
+  </g>
+
+  <path d="M1020 88 C1000 52, 930 52, 902 86" stroke="#58a6ff" stroke-width="1.4" fill="none" opacity="0.7" stroke-dasharray="4 4"/>
+  <path d="M902 86 l9 -3 l-4 8 z" fill="#58a6ff" opacity="0.7"/>
+
+  <g fill="#8b949e">
+    <circle cx="762" cy="74" r="6"/>
+    <circle cx="762" cy="126" r="6"/>
+  </g>
+  <circle cx="900" cy="100" r="9" fill="#58a6ff"/>
+  <circle cx="1020" cy="100" r="9" fill="#58a6ff"/>
+  <g fill="#484f58">
+    <circle cx="1128" cy="58" r="5"/>
+    <circle cx="1128" cy="86" r="5"/>
+    <circle cx="1128" cy="114" r="5"/>
+    <circle cx="1128" cy="142" r="5"/>
+  </g>
+</svg>
