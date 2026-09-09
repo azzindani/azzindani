@@ -10,7 +10,7 @@
   <rect x="0" y="0" width="1280" height="6" fill="url(#edge)"/>
 
   <g font-family="DejaVu Sans, Verdana, Geneva, sans-serif">
-    <text x="96" y="138" fill="#58a6ff" font-size="26" font-weight="600" letter-spacing="7">AZZINDANI</text>
+    <text x="96" y="138" fill="#58a6ff" font-size="26" font-weight="600" letter-spacing="7">azzindani</text>
 
     <text x="96" y="286" fill="#e6edf3" font-size="68" font-weight="700">Open source gives</text>
     <text x="96" y="368" fill="#e6edf3" font-size="68" font-weight="700">freedom to everyone.</text>
@@ -22,25 +22,25 @@
 
   <rect x="96" y="492" width="120" height="3" fill="#30363d"/>
 
-  <g opacity="0.5">
-    <g stroke="#1c2430" stroke-width="1.2" fill="none">
-      <path d="M1006 540 L1076 512"/>
-      <path d="M1006 578 L1076 512"/>
-      <path d="M1092 512 L1160 512"/>
-      <path d="M1176 512 L1214 486"/>
-      <path d="M1176 512 L1214 506"/>
-      <path d="M1176 512 L1214 526"/>
-      <path d="M1176 512 L1214 546"/>
+  <!-- one becomes many: a solid mark, copied outward and fading -->
+  <g>
+    <rect x="940" y="200" width="40" height="40" rx="6" fill="#58a6ff"/>
+    <g fill="none" stroke="#58a6ff" stroke-width="2">
+      <rect x="1010" y="200" width="40" height="40" rx="6" opacity="0.62"/>
+      <rect x="1080" y="200" width="40" height="40" rx="6" opacity="0.50"/>
+      <rect x="1150" y="200" width="40" height="40" rx="6" opacity="0.38"/>
+      <rect x="940"  y="270" width="40" height="40" rx="6" opacity="0.62"/>
+      <rect x="1010" y="270" width="40" height="40" rx="6" opacity="0.50"/>
+      <rect x="1080" y="270" width="40" height="40" rx="6" opacity="0.38"/>
+      <rect x="1150" y="270" width="40" height="40" rx="6" opacity="0.28"/>
+      <rect x="940"  y="340" width="40" height="40" rx="6" opacity="0.50"/>
+      <rect x="1010" y="340" width="40" height="40" rx="6" opacity="0.38"/>
+      <rect x="1080" y="340" width="40" height="40" rx="6" opacity="0.28"/>
+      <rect x="1150" y="340" width="40" height="40" rx="6" opacity="0.20"/>
+      <rect x="940"  y="410" width="40" height="40" rx="6" opacity="0.38"/>
+      <rect x="1010" y="410" width="40" height="40" rx="6" opacity="0.28"/>
+      <rect x="1080" y="410" width="40" height="40" rx="6" opacity="0.20"/>
+      <rect x="1150" y="410" width="40" height="40" rx="6" opacity="0.13"/>
     </g>
-    <g fill="#222d3a">
-      <circle cx="1000" cy="540" r="6"/>
-      <circle cx="1000" cy="578" r="6"/>
-      <circle cx="1220" cy="486" r="4"/>
-      <circle cx="1220" cy="506" r="4"/>
-      <circle cx="1220" cy="526" r="4"/>
-      <circle cx="1220" cy="546" r="4"/>
-    </g>
-    <circle cx="1084" cy="512" r="9" fill="#1f6feb"/>
-    <circle cx="1168" cy="512" r="9" fill="#1f6feb"/>
   </g>
 </svg>

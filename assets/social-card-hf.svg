@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="azzindani — open datasets, open weights">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFD21E"/>
+      <stop offset="1" stop-color="#FFD21E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="#0d1117"/>
+  <rect x="0" y="0" width="1280" height="6" fill="url(#edge)"/>
+
+  <g font-family="DejaVu Sans, Verdana, Geneva, sans-serif">
+    <text x="96" y="138" fill="#FFD21E" font-size="26" font-weight="600" letter-spacing="7">azzindani</text>
+
+    <text x="96" y="286" fill="#e6edf3" font-size="68" font-weight="700">Open datasets.</text>
+    <text x="96" y="368" fill="#e6edf3" font-size="68" font-weight="700">Open weights.</text>
+
+    <text x="98" y="438" fill="#8b949e" font-size="30">The foundation, and what's built on it —</text>
+    <text x="98" y="478" fill="#8b949e" font-size="30">free to take.</text>
+
+    <text x="98" y="576" fill="#6e7681" font-size="22" letter-spacing="1.2">huggingface.co/Azzindani</text>
+  </g>
+
+  <rect x="96" y="516" width="120" height="3" fill="#30363d"/>
+
+  <!-- strata: a wide field of data, narrowing upward into the weights it supports -->
+  <g>
+    <rect x="1010" y="196" width="110" height="18" rx="4" fill="#FFD21E"/>
+    <rect x="980"  y="238" width="170" height="16" rx="4" fill="#FFD21E" opacity="0.6"/>
+    <rect x="950"  y="278" width="230" height="16" rx="4" fill="#FFD21E" opacity="0.36"/>
+
+    <g fill="#8b949e">
+      <circle cx="948" cy="342" r="4" opacity="0.85"/><circle cx="974" cy="342" r="4" opacity="0.7"/>
+      <circle cx="1000" cy="342" r="4" opacity="0.85"/><circle cx="1026" cy="342" r="4" opacity="0.6"/>
+      <circle cx="1052" cy="342" r="4" opacity="0.85"/><circle cx="1078" cy="342" r="4" opacity="0.7"/>
+      <circle cx="1104" cy="342" r="4" opacity="0.6"/><circle cx="1130" cy="342" r="4" opacity="0.85"/>
+      <circle cx="1156" cy="342" r="4" opacity="0.7"/><circle cx="1182" cy="342" r="4" opacity="0.6"/>
+
+      <circle cx="948" cy="370" r="4" opacity="0.6"/><circle cx="974" cy="370" r="4" opacity="0.85"/>
+      <circle cx="1000" cy="370" r="4" opacity="0.7"/><circle cx="1026" cy="370" r="4" opacity="0.85"/>
+      <circle cx="1052" cy="370" r="4" opacity="0.6"/><circle cx="1078" cy="370" r="4" opacity="0.85"/>
+      <circle cx="1104" cy="370" r="4" opacity="0.7"/><circle cx="1130" cy="370" r="4" opacity="0.6"/>
+      <circle cx="1156" cy="370" r="4" opacity="0.85"/><circle cx="1182" cy="370" r="4" opacity="0.7"/>
+
+      <circle cx="948" cy="398" r="4" opacity="0.7"/><circle cx="974" cy="398" r="4" opacity="0.6"/>
+      <circle cx="1000" cy="398" r="4" opacity="0.85"/><circle cx="1026" cy="398" r="4" opacity="0.7"/>
+      <circle cx="1052" cy="398" r="4" opacity="0.85"/><circle cx="1078" cy="398" r="4" opacity="0.6"/>
+      <circle cx="1104" cy="398" r="4" opacity="0.85"/><circle cx="1130" cy="398" r="4" opacity="0.7"/>
+      <circle cx="1156" cy="398" r="4" opacity="0.6"/><circle cx="1182" cy="398" r="4" opacity="0.85"/>
+
+      <circle cx="948" cy="426" r="4" opacity="0.85"/><circle cx="974" cy="426" r="4" opacity="0.7"/>
+      <circle cx="1000" cy="426" r="4" opacity="0.6"/><circle cx="1026" cy="426" r="4" opacity="0.85"/>
+      <circle cx="1052" cy="426" r="4" opacity="0.7"/><circle cx="1078" cy="426" r="4" opacity="0.85"/>
+      <circle cx="1104" cy="426" r="4" opacity="0.6"/><circle cx="1130" cy="426" r="4" opacity="0.85"/>
+      <circle cx="1156" cy="426" r="4" opacity="0.7"/><circle cx="1182" cy="426" r="4" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
