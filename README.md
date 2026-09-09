@@ -38,13 +38,19 @@ Have a look around.
 
 ### 📊 Activity
 
-![](https://github-readme-stats.vercel.app/api?username=azzindani&theme=github_dark&hide_border=true&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=azzindani&theme=github-dark&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=azzindani&theme=github_dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact&langs_count=8)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
+  <img alt="GitHub statistics, including private repositories" src="assets/stats-dark.svg">
+</picture>
 
-![](https://github-readme-activity-graph.vercel.app/graph?username=azzindani&theme=github-compact&hide_border=true&area=true)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/langs-light.svg">
+  <img alt="Languages by repository count" src="assets/langs-dark.svg">
+</picture>
 
-![](https://github-profile-trophy.vercel.app/?username=azzindani&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8)
+<sub>Regenerated daily from the GitHub API by <a href=".github/workflows/stats.yml">a workflow in this repo</a> — private repositories included.</sub>
 
 ---
 
