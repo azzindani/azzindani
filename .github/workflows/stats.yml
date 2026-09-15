@@ -2,13 +2,13 @@ name: Statistics
 
 # Regenerates the SVG cards in assets/ and commits them when the numbers move.
 #
-# Needs a secret named STATS_TOKEN: a fine-grained personal access token,
+# Add a secret named STATS_TOKEN - a fine-grained personal access token,
 # read-only, scoped to all repositories, granting "Metadata: read" and
-# "Contents: read". That is what lets the query count private work - the
-# built-in GITHUB_TOKEN cannot see outside this repository.
+# "Contents: read" - and the cards start counting private work too.
 #
-# Without that secret the job skips with a notice rather than failing, so an
-# unconfigured repo does not collect a red run every morning.
+# Without it the job still renders, falling back to the Actions token and
+# reporting public repositories only. The card says which it is, so the
+# numbers are never overstated.
 
 on:
   schedule:
@@ -32,33 +32,29 @@ jobs:
     runs-on: ubuntu-latest
     env:
       STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATS_LOGIN: ${{ github.repository_owner }}
     steps:
       - uses: actions/checkout@v4
 
-      # The secrets context is not available to a job-level `if`, so the check
-      # happens here and gates the steps that follow.
-      - name: Check for a token
-        id: guard
+      # The secrets context is not available to a job-level `if`, so this only
+      # reports which scope the run will use; the render happens either way.
+      - name: Report scope
         run: |
           if [ -z "$STATS_TOKEN" ]; then
-            echo "::notice title=Statistics not configured::STATS_TOKEN is not set, so there is nothing to render. Add it under Settings > Secrets and variables > Actions, then run this workflow again."
-            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Public scope::STATS_TOKEN is not set, so the cards will count public repositories only. Add it under Settings > Secrets and variables > Actions to include private work."
           else
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "STATS_TOKEN found - private repositories included."
           fi
 
       - uses: actions/setup-python@v5
-        if: steps.guard.outputs.ready == 'true'
         with:
           python-version: "3.12"
 
       - name: Render cards
-        if: steps.guard.outputs.ready == 'true'
         run: python scripts/generate_stats.py
 
       - name: Commit if changed
-        if: steps.guard.outputs.ready == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

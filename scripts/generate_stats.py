@@ -81,6 +81,7 @@ query($login: String!, $cursor: String) {
       pageInfo { hasNextPage endCursor }
       nodes {
         isPrivate
+        pushedAt
         stargazerCount
         primaryLanguage { name color }
       }
@@ -205,16 +206,21 @@ def card_open(width, height, t):
     )
 
 
-def render_stats(metrics, theme_name, generated):
+def render_stats(metrics, theme_name, subtitle):
     t = THEMES[theme_name]
     w, h = 760, 232
+    fourth = (
+        ("Private repos", human(metrics["private"]))
+        if metrics["private"]
+        else ("Followers", human(metrics["followers"]))
+    )
     tiles = [
         ("Contributions", human(metrics["contributions"])),
         ("Commits", human(metrics["commits"])),
         ("Pull requests", human(metrics["prs"])),
         ("Code reviews", human(metrics["reviews"])),
         ("Repositories", human(metrics["repos"])),
-        ("Private repos", human(metrics["private"])),
+        fourth,
         ("Stars earned", human(metrics["stars"])),
         ("Longest streak", f'{metrics["longest_streak"]} d'),
     ]
@@ -225,7 +231,7 @@ def render_stats(metrics, theme_name, generated):
     )
     parts.append(
         f'<text x="{w - 28}" y="44" fill="{t["label"]}" font-size="12" text-anchor="end">'
-        f"including private repositories · {esc(generated)}</text>"
+        f"{esc(subtitle)}</text>"
     )
     parts.append(f'<line x1="28" y1="62" x2="{w - 28}" y2="62" stroke="{t["rule"]}"/>')
 
@@ -244,7 +250,7 @@ def render_stats(metrics, theme_name, generated):
     return "".join(parts)
 
 
-def render_languages(langs, total_repos, theme_name):
+def render_languages(langs, subtitle, theme_name):
     t = THEMES[theme_name]
     w = 760
     rows = (len(langs) + 1) // 2
@@ -256,7 +262,7 @@ def render_languages(langs, total_repos, theme_name):
     )
     parts.append(
         f'<text x="{w - 28}" y="44" fill="{t["label"]}" font-size="12" text-anchor="end">'
-        f"by repository, not by file size</text>"
+        f"{esc(subtitle)}</text>"
     )
 
     bar_w = w - 56
@@ -294,28 +300,59 @@ def render_languages(langs, total_repos, theme_name):
 # ------------------------------------------------------------------------- main
 
 
-def main():
-    token = os.environ.get("STATS_TOKEN")
-    login = os.environ.get("STATS_LOGIN")
-    if not token or not login:
-        sys.exit("STATS_TOKEN and STATS_LOGIN must both be set")
+def rank_languages(repos, months):
+    """Rank by repository count, preferring repos touched in the last `months`.
 
-    user = gql(USER_QUERY, {"login": login}, token)["user"]
-    repos, total_repos = fetch_repos(login, token)
-    totals, days = fetch_contributions(login, token, user["createdAt"])
-    current_streak, longest_streak = streaks(days)
+    Ranking by bytes would let notebooks - which embed their outputs - bury
+    everything else. Ranking every repo ever owned buries current work under
+    an archive. So: recent repos if there are enough of them, all repos
+    otherwise, and the card says which.
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(days=30 * months)
+    recent = [
+        r for r in repos
+        if r.get("pushedAt")
+        and datetime.fromisoformat(r["pushedAt"].replace("Z", "+00:00")) >= cutoff
+    ]
 
-    by_language = Counter()
-    colors = {}
-    for repo in repos:
+    scoped, window = (recent, months) if len(recent) >= 8 else (repos, None)
+
+    counts, colors = Counter(), {}
+    for repo in scoped:
         lang = repo.get("primaryLanguage")
         if not lang:
             continue
-        by_language[lang["name"]] += 1
+        counts[lang["name"]] += 1
         colors[lang["name"]] = lang["color"] or "#8b949e"
 
-    top = by_language.most_common(8)
-    langs = [(name, colors[name], count) for name, count in top]
+    langs = [(name, colors[name], n) for name, n in counts.most_common(8)]
+    subtitle = (
+        f"by repository · active in the last {window} months"
+        if window
+        else "by repository, not by file size"
+    )
+    return langs, subtitle
+
+
+def main():
+    # A fine-grained PAT sees private work. Falling back to the Actions token
+    # still renders a card, just a public-only one, labelled as such.
+    token = os.environ.get("STATS_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    login = os.environ.get("STATS_LOGIN")
+    if not token or not login:
+        sys.exit("a token (STATS_TOKEN or GITHUB_TOKEN) and STATS_LOGIN must be set")
+
+    user = gql(USER_QUERY, {"login": login}, token)["user"]
+    repos, total_repos = fetch_repos(login, token)
+
+    try:
+        totals, days = fetch_contributions(login, token, user["createdAt"])
+    except Exception as exc:  # a scoped token may not reach the calendar
+        print(f"contributions unavailable ({exc}); rendering what is available")
+        totals, days = Counter(), {}
+
+    current_streak, longest_streak = streaks(days)
+    langs, lang_subtitle = rank_languages(repos, months=18)
 
     metrics = {
         "contributions": totals["contributions"],
@@ -331,13 +368,15 @@ def main():
         "longest_streak": longest_streak,
     }
 
-    generated = date.today().isoformat()
+    scope = "including private repositories" if metrics["private"] else "public repositories"
+    subtitle = f"{scope} · {date.today().isoformat()}"
+
     os.makedirs(OUT_DIR, exist_ok=True)
     for theme in THEMES:
         with open(os.path.join(OUT_DIR, f"stats-{theme}.svg"), "w", encoding="utf-8") as fh:
-            fh.write(render_stats(metrics, theme, generated))
+            fh.write(render_stats(metrics, theme, subtitle))
         with open(os.path.join(OUT_DIR, f"langs-{theme}.svg"), "w", encoding="utf-8") as fh:
-            fh.write(render_languages(langs, total_repos, theme))
+            fh.write(render_languages(langs, lang_subtitle, theme))
 
     print(json.dumps(metrics, indent=2))
     print("languages:", ", ".join(f"{n} {c}" for n, _, c in langs))
